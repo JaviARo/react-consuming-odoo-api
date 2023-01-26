@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <!-- Reglas de registro -->
+  <record id="tareas_por_programador" model="ir.rule">
+    <field name="name">Usuario programador solo accede a sus tareas</field>
+    <field name="model_id" ref="empresas_tareas" />
+    <field name="domain_force">[('user_id','=',user.id)]</field>
+    <field name="groups" eval="[(4, ref('empresas.grupo_programador'))]" />
+    <field name="perm_read" eval="False" />
+    <field name="perm_write" eval="True" />
+    <field name="perm_create" eval="False" />
+    <field name="perm_unlink" eval="False" />
+  </record>
+</odoo>

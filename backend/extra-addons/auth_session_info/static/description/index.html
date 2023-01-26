@@ -1,0 +1,65 @@
+<section class="oe_container oe_dark">
+    <div class="col-md-12">
+        <h2 class="oe_slogan" style="font-size: 35px;color:#910050"><b>Auth Session Info For JSON-RPC Access</b></h2>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div style="text-align:center;">
+            <p class="fa fa-hand-o-right" style="color:CRIMSON;font-size: 25px;">
+                <span style="color:#2dd280;font-size: 15px;">Odoo Authendication(web/session/authendication), missing "session_id" parameter added for JSON-RPC API easy access</span>
+            </p><br/>
+        </div>
+        <br/>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h3 class="oe_slogan" style="color:#332c3c;font-size: 28px;">Before Install</h3>
+            <div class="oe_demo oe_picture oe_screenshot">
+                <pre>{"jsonrpc": "2.0", "id": null, "result": {"uid": 2, "is_system": true, "is_admin": true, "user_context": {"lang": "en_US", "tz": "Asia/Kolkata", "uid": 2}, "db": "odoo13_demo", "server_version": "13.0", "server_version_info": [13, 0, 0, "final", 0, ""], "name": "Mitchell Admin", "username": "admin", "partner_display_name": "YourCompany, Mitchell Admin", "company_id": 1, "partner_id": 3, "user_companies": {"current_company": [1, "My Company (San Francisco)"], "allowed_companies": [[2, "My Company (Chicago)"], [1, "My Company (San Francisco)"]]}, "currencies": {"1": {"symbol": "\u20ac", "position": "after", "digits": [69, 2]}, "20": {"symbol": "\u20b9", "position": "after", "digits": [69, 2]}, "2": {"symbol": "$", "position": "before", "digits": [69, 2]}}, "web.base.url": "http://localhost:8082", "show_effect": "True", "display_switch_company_menu": true, "cache_hashes": {"load_menus": "2461fb65e511fff2ad619d9e932f15daf60557fc", "qweb": "4e718e775b50f61c825c1d3d6b3c390d0c89b99b", "translations": "026ae15487c2067877f7b82ffb991974c070d399"}, "max_time_between_keys_in_ms": 55, "web_tours": [], "out_of_office_message": false, "odoobot_initialized": true}}</pre>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h3 class="oe_slogan" style="color:#332c3c;font-size: 28px;">After Install</h3>
+            <div class="oe_demo oe_picture oe_screenshot">
+                <pre>{"jsonrpc": "2.0", "id": null, "result": {"uid": 2, <b style="color:#910050">"session_id": "12658c0a0e7f4becee5d0b0bce569ef7bb0ffdf6"</b>, "is_system": true, "is_admin": true, "user_context": {"lang": "en_US", "tz": "Asia/Kolkata", "uid": 2}, "db": "odoo13_demo", "server_version": "13.0", "server_version_info": [13, 0, 0, "final", 0, ""], "name": "Mitchell Admin", "username": "admin", "partner_display_name": "YourCompany, Mitchell Admin", "company_id": 1, "partner_id": 3, "user_companies": {"current_company": [1, "My Company (San Francisco)"], "allowed_companies": [[2, "My Company (Chicago)"], [1, "My Company (San Francisco)"]]}, "currencies": {"1": {"symbol": "\u20ac", "position": "after", "digits": [69, 2]}, "20": {"symbol": "\u20b9", "position": "after", "digits": [69, 2]}, "2": {"symbol": "$", "position": "before", "digits": [69, 2]}}, "web.base.url": "http://127.0.0.1:8082", "show_effect": "True", "display_switch_company_menu": true, "cache_hashes": {"load_menus": "2461fb65e511fff2ad619d9e932f15daf60557fc", "qweb": "4e718e775b50f61c825c1d3d6b3c390d0c89b99b", "translations": "026ae15487c2067877f7b82ffb991974c070d399"}, "max_time_between_keys_in_ms": 55, "web_tours": [], "out_of_office_message": false, "odoobot_initialized": true}}</pre>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr style="width: 100%;height: 4px;background: #910050;margin: 0px 0px;">
+<hr style="width: 100%;height: 4px;background: #0f9dc0;margin: 0px 0px;">
+<section class="oe_container oe_dark">
+    <div class="oe_row ">
+        <div class="oe_slogan text-center">
+            <img src="icon.png"/>
+            <div style="color:#0f9dc0;">
+                <h3 style="color:#910050;font-size: 25px;">If you need any help or want more features, just contact us:</h3><br>
+                <h3 style="color:#910050;font-size: 20px;">Email: <a href="mailto:bala.hariprasath@gmail.com">bala.hariprasath@gmail.com</a> <br></h3>
+            </div>
+            <div class="oe_slogan">
+               <h2>
+                    <a target="_blank" href="" target="new">
+                        <i class="fa fa-facebook-square" style="font-size:38px;"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fa fa-linkedin" style="font-size:38px;"></i>
+                    </a>
+                </h2>
+            </div>
+        </div>
+    </div>
+</section>
+<hr style="width: 100%;height: 4px;background: #0f9dc0;margin: 0px 0px;">
+<hr style="width: 100%;height: 4px;background: #910050;margin: 0px 0px;">
+    

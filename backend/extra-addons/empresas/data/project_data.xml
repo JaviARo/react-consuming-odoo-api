@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo noupdate="1">
+  <!-- Project tags -->
+  <record id="project_category_urgente" model="project.tags">
+    <field name="name">Urgente</field>
+  </record>
+  <record id="project_category_rutinaria" model="project.tags">
+    <field name="name">Rutinaria</field>
+  </record>
+</odoo>

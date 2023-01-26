@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+
+    <!-- Grupo administrador -->
+    <record id="grupo_administrador" model="res.groups">
+      <field name="name">Empresas/Administrador</field>
+      <field name="comment">Perfil administrador de proyectos</field>
+    </record>
+
+    <!-- Grupo jefe de proyectos -->
+    <record id="grupo_jefe" model="res.groups">
+      <field name="name">Empresas/Jefe de proyectos</field>
+      <field name="comment">Perfil jefe de proyectos</field>
+    </record>
+
+    <!-- Grupo analista -->
+    <record id="grupo_analista" model="res.groups">
+      <field name="name">Empresas/Analista</field>
+      <field name="comment">Perfil analista de proyectos</field>
+    </record>
+
+    <!-- Grupo programador -->
+    <record id="grupo_programador" model="res.groups">
+      <field name="name">Empresas/Programador</field>
+      <field name="comment">Perfil programador de proyectos</field>
+    </record>
+
+    <!-- Grupo programador sobre tareas -->
+    <!-- <record id="programador_project" model="res.groups">
+      <field name="name">Programador</field>
+      <field name="comment">Usuario programador solo modifica sus tareas</field>
+      <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+      <field name="category_id" ref="base.module_category_services_project"/>
+    </record> -->
+
+    <!-- Asignación de grupo_administrador al usuario Administrador -->
+    <record id="base.user_admin" model="res.users">
+      <field name="groups_id" eval="[(4, ref('empresas.grupo_administrador'))]"/>
+    </record>
+  </data>
+</odoo> 

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+  <data>
+
+    <template id="empresas_report_template">
+      <t t-call="web.html_container">
+        <head>
+          <style>
+                    table { 
+                        border: black 1px solid; 
+                        border-spacing: 0px; 
+                        margin-left: auto; 
+                        margin-right: auto; 
+                    } 
+ 
+                    table tr:nth-of-type(even) { 
+                        background-color: rgb(11, 238, 231); 
+                    }
+
+                    tr { 
+                        border: black 1px solid; 
+                         border-spacing: 0px; 
+                    } 
+ 
+                    td { 
+                        border: black 1px solid; 
+                         border-spacing: 0px; 
+                    } 
+                </style>
+        </head>
+        <div class="page">
+          <br />
+          <t t-foreach='docs' t-as='o'>
+            <table>
+              <tr>
+                <td colspan="3" align="center">
+                  <b>
+                    <span t-field="o.name" />
+                  </b>
+                </td>
+              </tr>
+              <tr></tr>
+              <tr t-foreach='o.proyectos' t-as='line'>
+                <td width="200" align="center">
+                  <span t-esc="line.name" />
+                </td>
+                <td width="200" align="center">
+                  <span t-esc="line.user_id.name" />
+                </td>
+                <td width="200" align="center">
+                  <span t-esc="line.description" />
+                </td>
+              </tr>
+            </table>
+          </t>
+        </div>
+      </t>
+    </template>
+
+  </data>
+</odoo>

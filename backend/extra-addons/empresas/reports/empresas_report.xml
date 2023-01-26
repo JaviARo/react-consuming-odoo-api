@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<odoo>
+  <data>
+
+    <record model="ir.actions.report" id="empresas.empresas_report">
+      <field name="name">Reporte empresas</field>
+      <field name="model">empresas.empresas</field>
+      <field name="report_type">qweb-html</field>
+      <field name="report_name">empresas.empresas_report_template</field>
+      <field name="report_file">empresas.empresas_report_template</field>
+      <field name="binding_model_id" ref="empresas.model_empresas_empresas"></field>
+      <field name="binding_type">report</field>
+    </record>
+
+  </data>
+</odoo>

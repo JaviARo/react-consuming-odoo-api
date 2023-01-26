@@ -1,0 +1,16 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_empresas_empresas_administrador,empresas.empresas.administrador,model_empresas_empresas,empresas.grupo_administrador,1,1,1,1
+access_project_project_administrador,project.project.administrador,model_project_project,empresas.grupo_administrador,1,1,1,1
+access_project_task_administrador,project.task.administrador,model_project_task,empresas.grupo_administrador,1,1,1,1
+
+access_empresas_empresas_jefe,empresas.empresas.jefe,model_empresas_empresas,empresas.grupo_jefe,1,1,1,1
+access_project_project_jefe,project.project.jefe,model_project_project,empresas.grupo_jefe,1,1,1,1
+access_project_task_jefe,project.task.jefe,model_project_task,empresas.grupo_jefe,1,1,1,1
+
+access_empresas_empresas_analista,empresas.empresas.analista,model_empresas_empresas,empresas.grupo_analista,1,0,0,0
+access_project_project_analista,project.project.analista,model_project_project,empresas.grupo_analista,1,0,0,0
+access_project_task_analista,project.task.analista,model_project_task,empresas.grupo_analista,1,1,1,1
+
+access_empresas_empresas_programador,empresas.empresas.programador,model_empresas_empresas,empresas.grupo_programador,1,0,0,0
+access_project_project_programador,project.project.programador,model_project_project,empresas.grupo_programador,1,0,0,0
+access_project_task_programador,project.task.programador,model_project_task,empresas.grupo_programador,1,1,0,0
