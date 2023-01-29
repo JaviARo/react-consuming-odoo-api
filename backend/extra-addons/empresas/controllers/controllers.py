@@ -14,10 +14,10 @@ class Empresas(http.Controller):
                 'id': rec.id,
                 'name': rec.name,
                 'description': rec.description,
-                # 'ingresos': rec.ingresos,
-                # 'gastos': rec.gastos,
-                # 'beneficios': rec.beneficios,
-                # 'rentabilidad': rec.rentabilidad
+                'ingresos': rec.ingresos,
+                'gastos': rec.gastos,
+                'beneficios': rec.beneficios,
+                'rentabilidad': rec.rentabilidad
             }
             empresas.append(vals)
         return {'status': 200, 'response': empresas, 'message': 'Success'}
@@ -30,10 +30,10 @@ class Empresas(http.Controller):
             'id': rec.id,
             'name': rec.name,
             'description': rec.description,
-            # 'ingresos': rec.ingresos,
-            # 'gastos': rec.gastos,
-            # 'beneficios': rec.beneficios,
-            # 'rentabilidad': rec.rentabilidad
+            'ingresos': rec.ingresos,
+            'gastos': rec.gastos,
+            'beneficios': rec.beneficios,
+            'rentabilidad': rec.rentabilidad
         }
         data = {'status': 200, 'response': val, 'message': 'Success'}
         return data
@@ -49,10 +49,10 @@ class Empresas(http.Controller):
                 'id': rec.id,
                 'name': rec.name,
                 'description': rec.description,
-                # 'ingresos': rec.ingresos,
-                # 'gastos': rec.gastos,
-                # 'beneficios': rec.beneficios,
-                # 'rentabilidad': rec.rentabilidad
+                'ingresos': rec.ingresos,
+                'gastos': rec.gastos,
+                'beneficios': rec.beneficios,
+                'rentabilidad': rec.rentabilidad
             }
             empresas.append(vals)
         return {'status': 200, 'response': empresas, 'message': 'Success'}

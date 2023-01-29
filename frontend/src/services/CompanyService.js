@@ -82,8 +82,8 @@ const create = data => {
       "data": {
         "name": data.name,
         "description": data.description,
-        // "ingresos": data.ingresos,
-        // "gastos": data.gastos
+        "ingresos": data.ingresos,
+        "gastos": data.gastos
       }
     }
   });
@@ -110,8 +110,8 @@ const update = (id, data) => {
       "data": {
         "name": data.name,
         "description": data.description,
-        // "ingresos": data.ingresos,
-        // "gastos": data.gastos
+        "ingresos": data.ingresos,
+        "gastos": data.gastos
       }
     }
   });

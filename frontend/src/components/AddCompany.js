@@ -6,8 +6,8 @@ const AddCompany = () => {
     id: null,
     name: "",
     description: "",
-    // ingresos: "",
-    // gastos: ""
+    ingresos: 0,
+    gastos: 0
   };
   const [company, setCompany] = useState(initialCompanyState);
   const [submitted, setSubmitted] = useState(false);
@@ -20,7 +20,9 @@ const AddCompany = () => {
   const saveCompany = () => {
     var data = {
       name: company.name,
-      description: company.description
+      description: company.description,
+      ingresos: company.ingresos,
+      gastos: company.gastos
     };
 
     CompanyDataService.create(data)
@@ -29,8 +31,8 @@ const AddCompany = () => {
           id: response.data.id,
           name: response.data.name,
           description: response.data.description,
-          // ingresos: response.data.ingresos,
-          // gastos: response.data.gastos
+          ingresos: response.data.ingresos,
+          gastos: response.data.gastos
         });
         setSubmitted(true);
       })
@@ -81,10 +83,10 @@ const AddCompany = () => {
             />
           </div>
 
-          {/* <div className="form-group">
+          <div className="form-group">
             <label htmlFor="ingresos">Ingresos</label>
             <input
-              type="number"
+              type="integer"
               className="form-control"
               id="ingresos"
               required
@@ -97,7 +99,7 @@ const AddCompany = () => {
           <div className="form-group">
             <label htmlFor="gastos">Gastos</label>
             <input
-              type="number"
+              type="integer"
               className="form-control"
               id="gastos"
               required
@@ -105,7 +107,7 @@ const AddCompany = () => {
               onChange={handleInputChange}
               name="gastos"
             />
-          </div> */}
+          </div>
 
           <button onClick={saveCompany} className="btn btn-success">
             Submit

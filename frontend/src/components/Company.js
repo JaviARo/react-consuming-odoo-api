@@ -10,8 +10,8 @@ const Company = props => {
     id: null,
     name: "",
     description: "",
-    // ingresos: "",
-    // gastos: ""
+    ingresos: 0,
+    gastos: 0
   };
   const [currentCompany, setCurrentCompany] = useState(initialCompanyState);
   const [message, setMessage] = useState("");
@@ -84,10 +84,10 @@ const Company = props => {
                 onChange={handleInputChange}
               />
             </div>
-            {/* <div className="form-group">
+            <div className="form-group">
               <label htmlFor="ingresos">Ingresos</label>
               <input
-                type="number"
+                type="integer"
                 className="form-control"
                 id="ingresos"
                 name="ingresos"
@@ -98,14 +98,14 @@ const Company = props => {
             <div className="form-group">
               <label htmlFor="gastos">Gastos</label>
               <input
-                type="number"
+                type="integer"
                 className="form-control"
                 id="gastos"
                 name="gastos"
                 value={currentCompany.gastos}
                 onChange={handleInputChange}
               />
-            </div> */}
+            </div>
 
           </form>
 

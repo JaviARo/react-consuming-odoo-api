@@ -127,7 +127,7 @@ const CompaniesList = () => {
               </label>{" "}
               {currentCompany.description}
             </div>
-            {/* <div>
+            <div>
               <label>
                 <strong>Ingresos:</strong>
               </label>{" "}
@@ -150,7 +150,7 @@ const CompaniesList = () => {
                 <strong>Rentabilidad:</strong>
               </label>{" "}
               {currentCompany.rentabilidad}
-            </div> */}
+            </div>
 
             <Link
               to={"/app/companies/" + currentCompany.id}
