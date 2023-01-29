@@ -13,6 +13,7 @@ class Empresas(http.Controller):
             vals = {
                 'id': rec.id,
                 'name': rec.name,
+                'imagen': rec.imagen,
                 'description': rec.description,
                 'ingresos': rec.ingresos,
                 'gastos': rec.gastos,
@@ -29,6 +30,7 @@ class Empresas(http.Controller):
         val = {
             'id': rec.id,
             'name': rec.name,
+            'imagen': rec.imagen,
             'description': rec.description,
             'ingresos': rec.ingresos,
             'gastos': rec.gastos,
@@ -48,6 +50,7 @@ class Empresas(http.Controller):
             vals = {
                 'id': rec.id,
                 'name': rec.name,
+                'imagen': rec.imagen,
                 'description': rec.description,
                 'ingresos': rec.ingresos,
                 'gastos': rec.gastos,

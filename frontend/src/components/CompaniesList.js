@@ -50,7 +50,7 @@ const CompaniesList = () => {
 
   const findByName = () => {
 
-    if(searchName === '') {
+    if (searchName === '') {
       refreshList();
       return;
     }
@@ -120,6 +120,12 @@ const CompaniesList = () => {
                 <strong>Name:</strong>
               </label>{" "}
               {currentCompany.name}
+            </div>
+            <div>
+              <label>
+                <strong>Imagen:</strong>
+              </label>{" "}
+              <img className="companyImg" src={"data:image/png;base64,"+ currentCompany.imagen} alt=""/>
             </div>
             <div>
               <label>

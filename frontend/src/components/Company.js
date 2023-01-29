@@ -73,6 +73,17 @@ const Company = props => {
                 onChange={handleInputChange}
               />
             </div>
+            {/* <div className="form-group">
+              <label htmlFor="imagen">Imagen</label>
+              <input
+                type="file"
+                className="form-control"
+                id="imagen"
+                name="imagen"
+                value={currentCompany.imagen}
+                onChange={handleInputChange}
+              />
+            </div> */}
             <div className="form-group">
               <label htmlFor="description">Description</label>
               <input
